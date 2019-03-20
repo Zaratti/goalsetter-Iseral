@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"  > 
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="icon" href="images/Group 8.png" type="image/x-icon" />
+        <title>GOAL SETTER</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script> 
+        <script src="js/preloader.js"></script> 
+        <link rel="stylesheet" href="main/css/bootstrap.min.css">
+        <link rel="stylesheet" href="main/animate.css">
+        <link rel="stylesheet" href="main/style.css">
+        <link rel="stylesheet" href="fontawesome-free-5.6.1-web/css/all.min.css">
+</head>
+<body>
+<!--navbar-->
+<div class="sign">
+    <nav class="navbar  navbar-expand-md navbar-dark bg-nav">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button class="navbar-toggler" type="button" data-toggle="collapse"data-target="#myNavbar">
+                        <span class="navbar-toggler-icon"></span>                     
+                </button>
+                <p class="navbar-brand offset-lg-3">
+                    <img src="images/GROUP 3.2.png" alt="">
+                </p>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class=" nav navbar-nav ml-auto">
+                    <li class="nav-item mx-1">
+                        <a class="nav-link" href="index.html"><button id="home">HOME</button></a>
+                    </li>
+                    <li class="nav-item mx-1">
+                        <a class="nav-link" href="login.html"><button id="get">Get Started</button></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container cont">
+            <div class="main3 offset-lg-4 offset-md-3 offset-sm-4">
+            <form class="form" id="addPost">
+            <label>Username :</label>
+            <div>
+                <i class="fa fa-user-circle icon"></i>
+                <input class="input-field" type="text" placeholder="name"  name="name" id="name">
+                <p style='color:red; margin:0;' id="err_name"></p>
+            </div>
+            <label>Mobile :</label>
+            <div>
+                <i class="fa fa-phone icon"></i>
+                <input class="input-field" type="text" placeholder="phone_number"  name="name" id="phone_number">
+                <p style='color:red; margin:0;' id="err_number"></p>
+            </div>
+            <label>Email</label>
+            <div>
+                <i class="fa fa-envelope icon"></i>
+                <input class="input-field" type="text" placeholder="email" name="email" id="email">
+                <p style='color:red; margin:0;' id="err_email"></p>
+            </div>
+            <label>Password :</label>
+            <div>
+                <i class="fa fa-lock icon"></i>
+                <input class="input-field" type="password" placeholder="password" name="password" id="password">
+                <p style='color:red; margin:0;' id="err_pwd"></p>
+            </div>
+            <label>Confirm Password :</label>
+            <div>
+                <i class="fa fa-lock icon"></i>
+                <input class="input-field" type="password" placeholder="confirm_password" name="cpassword" id="confirm_password">
+            </div>
+            <label>Account type:</label>
+            <select name="cars" class="input" style="background: #2d80ce;" id="accounttype">
+                    <option selected value="Personal"> Personal</option>
+                    <option value="Team">Team</option>
+                    <option value="Company">Company</option>
+            </select>
+            <button type="submit" name="register" id="register"  value="Register"> Register</button>
+            </form>
+</div>
+</div>
+
+<div class="container mt-4">
+    <div class="modal fade" id="myModal">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+              
+        <!-- Modal Header -->
+          <div class="modal-header">
+              <h4 class="modal-title"></h4>
+              <a href="" class="btn btn-danger" data-dismiss="modal">cancel</a>
+          </div>
+                
+          <!-- Modal body -->
+          <div id="info" class="modal-body">    
+
+          </div>
+                
+                <!-- Modal footer -->
+                
+        </div>
+      </div>
+    </div>
+  </div>
+  
+
+
+        <script src="js/js/jquery.min.js"></script>
+        <script src="js/js/bootstrap.min.js"></script>
+        <script src="js/axios.js"></script>
+        <script src="js/javascript.js"></script>
+</body>
+</html>

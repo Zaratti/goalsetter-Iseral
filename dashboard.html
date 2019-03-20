@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html>
+<head>
+        <meta charset="UTF-8" >
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"  > 
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="icon" href="images/Group 8.png" type="image/x-icon" />
+        <title>Goal SETTER</title>
+        <link rel="stylesheet" href="main/css/bootstrap.min.css">
+        <link rel="stylesheet" href="main/animate.css">
+        <link rel="stylesheet" href="main/style.css">
+        <link rel="stylesheet" href="fontawesome-free-5.6.1-web/css/all.min.css">
+         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+        <script src="js/javascript.js"></script>
+</head>
+<body class="Dashboard">
+  <!--navbar-->
+<div class="container-fluid px-0">
+    <nav class="navbar  navbar-expand-md navbar-dark bg-nav">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <p class="navbar-brand">
+                  <img src="images/Group 3.1.png" alt="">
+                </p>
+            </div>
+                <ul class="nav navbar-nav ml-auto">
+                    <li class="active">
+                        <a class="nav-link" style="color:#3768a0" href="profile.html"> User Management</a>
+                    </li>
+                    <li>
+                        <form action="" id="logoutForm">
+                            <button type="submit" id="button">logout</button>
+                          </form>
+                    </li>
+                </ul>
+        </div>
+    </nav>
+</div>
+
+
+ <!--body-->
+<div class="container-fluid" style="background-color:#e6e6e6;">
+    <div class="row dash">
+        <div class="col-2 border" >
+                <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                        <a class="nav-link profill" id="v-pills-home-tab" data-toggle="pill" href="#v-pills-home" role="tab" aria-controls="v-pills-home" aria-selected="true">Home</a>
+                        <a class="nav-link profill" id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-profile" role="tab" aria-controls="v-pills-profile" aria-selected="false">Profile</a>
+                        <a class="nav-link profill" id="v-pills-messages-tab" data-toggle="pill" href="#v-pills-messages" role="tab" aria-controls="v-pills-messages" aria-selected="false">Messages</a>
+                        <a class="nav-link profill" id="v-pills-settings-tab" data-toggle="pill" href="#v-pills-settings" role="tab" aria-controls="v-pills-settings" aria-selected="false">Settings</a>
+                        
+                </div>
+            </div>
+    
+        <div class="col-7 border">
+              <div class="tab-content" id="v-pills-tabContent">
+                        <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab"> 
+                            <div class="fieldset">
+                                <fieldset>
+                                    <div>
+                                        <i class="fas fa-box-open icons"></i>
+                                        <p style="color:#3768a0">You have no Goal</p>
+                                        <a href="#form"><button class="btn btn-primary" data-toggle="modal" data-target="#myModal">Add Goals</button></a>
+                                    </div>
+                                </fieldset>
+                            </div>      
+                        </div>
+  
+                <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">
+                </div>
+                <div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab"> 
+                                <div class="modal-header">
+                                    <h4 class="modal-title">You have no massages</h4>
+                                </div>
+                                  
+                                  <!-- Modal body -->
+                                <div class="modal-body" style="color:#3768a0">
+                                    Modal body..
+                                </div>      
+                </div>
+                <div class="tab-pane fade" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab">       
+                </div> 
+            </div>
+          </div>
+        <div class="col-3 border text-center" style="background-color:#e6e6e6;">
+                
+                <i class="fa fa-user-circle" style="color:#3768a0; font-size:100px; margin-top:30%;"></i>
+                <marquee behavior="" direction="">You are welcome</marquee>  
+                <p>favour</p>      
+        </div>
+    </div>
+</div>
+    
+
+<div class="container mt-4">
+  <div class="modal fade" id="myModal">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+            
+      <!-- Modal Header -->
+        <div class="modal-header">
+            <h4 class="modal-title">Create goal</h4>
+            <a href="" class="btn btn-danger" data-dismiss="modal">cancel</a>
+        </div>
+              
+        <!-- Modal body -->
+        <div class="modal-body">
+            <form action="" method="get">
+                <label style="color:#2d80ce">Goal Name :</label> 
+                <input style="background-color:#ffffff; border:1px solid; width: 40%; color:#2d80ce" type="text"> 
+                <label style="color:#2d80ce;">due date :</label>
+                <input style="background-color:#ffffff; border:1px solid; color:#2d80ce" type="date" value="">
+                <div style="width:40%">
+                <select class="form-control">
+                      <option selected>Choose</option>
+                      <option>One the day</option>
+                      <option>1 day</option>
+                      <option>2 days</option>
+                      <option>3 days</option>
+                      <option>1 week before</option>
+                      <option>Daily</option>
+                      <option>weekly</option>
+                      <option>monthly</option>
+                      <option>yearly</option>
+                </select>
+                    
+                <select class="form-control">
+                      <option selected>Choose</option>
+                      <option>One the day</option>
+                      <option>1 day</option>
+                      <option>2 days</option>
+                      <option>3 days</option>
+                      <option>1 week before</option>
+                      <option>Daily</option>
+                      <option>weekly</option>
+                      <option>monthly</option>
+                      <option>yearly</option>
+                  </select>
+                   
+                  <select class="form-control">
+                        <option selected>Choose</option>
+                        <option>One the day</option>
+                        <option>1 day</option>
+                        <option>2 days</option>
+                        <option>3 days</option>
+                        <option>1 week before</option>
+                        <option>Daily</option>
+                        <option>weekly</option>
+                        <option>monthly</option>
+                        <option>yearly</option>
+                    </select>
+                    </div>
+                    <label style="color:#2d80ce">Why do you want to active this goal ?</label>
+                    <textarea style="border: 1px solid #2d80ce; color:#2d80ce" rows="4" cols="47"></textarea>
+                    <label style="color:#2d80ce">S.M.A.R.T. goal</label> <br>
+                    <input type="checkbox"> <label style="color:#2d80ce;font-size: 12px;">
+                        Yes, my goal is Specific, Measurable, Achievable, Relavant and Time Specific</label>
+            </form>
+        </div>
+              
+              <!-- Modal footer -->
+        <div class="modal-footer">
+            <ANY data-toggle="modal" data-target="TARGET-2" data-dismiss="modal">
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal4" data-save="modal">
+                    Save
+                  </button>
+            </ANY>   
+        </div>
+              
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container mt-4">
+  <div class="modal fade" id="myModal4">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+          
+           <!-- Modal Header -->
+        <div class="modal-header">
+          <h4 class="modal-title" id="bigName2">Favour goal</h4>
+            <ANY data-toggle="modal" data-target="TARGET-2" data-dismiss="modal">
+                <button class="fa fa-pen btn btn-primary" type="button"  data-toggle="modal" data-target="#myModal" data-save="modal"> 
+                  Edite
+                </button><br>
+            </ANY>
+             
+        </div>
+        <!-- Modal body -->
+        <div class="modal-body" style="background-color:#e6e6e6;">
+          <form action="">
+              <label style="color:black">Taxt Name :</label><br>
+            <input type="text" style="width:100%;">
+            <label style="color:black">Type :</label><br>
+            <label class="checkbox-inline" style="color:black"> 
+              <input type="radio" name="optionsRadiosinline" id="optionsRadios3" value="Single" checked> Single 
+            </label> 
+            <label class="checkbox-inline" style="color:black"> 
+              <input type="radio" name="optionsRadiosinline" id="optionsRadios4" value="Repeating"> Repeating 
+            </label>
+            <label class="checkbox-inline" style="color:black"> 
+                <input type="radio" name="optionsRadiosinline" id="optionsRadios4" value="Multiple"> Multiple
+              </label><br>
+            <label style="color:black">Due date :</label><br>
+            <input type="date" name="" id=""><br>
+            <label style="color:black">Reminder :</label><br>
+            <select class="form-control">
+                <option selected>Choose</option>
+                <option>One the day</option>
+                <option>1 day</option>
+                <option>2 days</option>
+                <option>3 days</option>
+                <option>1 week before</option>
+                <option>Daily</option>
+                <option>weekly</option>
+                <option>monthly</option>
+                <option>yearly</option>
+            </select>
+          </form>
+              
+        </div>
+        <!-- Modal footer -->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary">Add another</button>
+          <button type="button" class="btn btn-primary" data-save="modal">Save</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="js/js/jquery.min.js"></script>
+<script src="js/js/bootstrap.min.js"></script>
+<script src="js/axios.js"></script>
+<script src="js/javascript.js"></script>
+</body>
+</html>
